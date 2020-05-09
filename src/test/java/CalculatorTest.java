@@ -8,4 +8,10 @@ public class CalculatorTest {
         int result = new Calculator().sum(3, 4);
         assertEquals(7, result);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivision() {
+        int result = new Calculator().division(4, 0);
+        assertEquals(5, result);
+    }
 }

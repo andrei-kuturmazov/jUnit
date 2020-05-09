@@ -1,5 +1,10 @@
 public class Calculator {
-    public static int sum(int first, int second) {
+
+    public int sum(int first, int second) {
         return first + second;
+    }
+
+    public int division(int first, int second) {
+        return first / second;
     }
 }
