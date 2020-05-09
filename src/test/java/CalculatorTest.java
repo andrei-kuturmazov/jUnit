@@ -1,11 +1,11 @@
-import org.junit.Assert;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
     @Test
     public void testSum() {
         int result = new Calculator().sum(3, 4);
-        Assert.assertEquals(7, result);
+        assertEquals(7, result);
     }
 }
